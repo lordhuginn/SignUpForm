@@ -1,44 +1,59 @@
-/*
-form {
-    background-color: silver;
-    align-content: flex-end;
+@font-face {
+    font-family: "Norsebold";
+    src: url(Norsebold.otf);
 }
-
-input {
-    margin-left: 0 auto;
-    display: block;
-}
-
-label span {
-    display: inline-block;
-    width: 120px;
-} */
 body {
     margin: 0px;
 }
 .image {
-    display: inline-block;
-    max-width: 30%;
+    position: relative;
+    flex-direction: row;
+    flex-basis: 656px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.logowrap {
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    max-height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+.logotext {
+    opacity: 1;
+    position: relative;
+    font-size: 170px;
+    color: white;
+    font-family: "Norsebold";
+    top: -200px;
+    left: 240px;
+}
+.odin {
+    position: relative;
+    left: 60px;
+  opacity: 1;
 }
 input{
     padding: 5px;
 }
 form{
-    background-color: silver;
+    background-color: rgb(211, 205, 205);
 }
 .form {
-    margin: 0 0 0 105px;
-    max-width: 62.5%;
-    padding: 1em;
+    flex-direction: row;
+    flex-basis: 1183px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-top: 100px;
+    /* padding: 1em;
     border : 1px rgb(5, 60, 92);
-    border-radius: 1em;
+    border-radius: 1em; */
 }
 .container {
     display: flex;
-    float: right;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-content: space-between;
+    align-content: stretch;
+    justify-content: start;
 }
 .name {
     display: inline-block;
@@ -63,10 +78,20 @@ input, label {
     display: block;
     font-size: 20px;
 }
-button {
+.first {
+    padding: 16px 24px;
+    margin-left: 50px;
     margin-right: 500px;
     margin-top: 12px;
-    size-adjust: 12px;
+    font-size: large;
+    background-color: #596D48;
+    border: none;
+    border-radius: 4px;
+}
+.userbut{
+    padding: 5px;
+    margin-left: 100px;
+    margin-right: 500px;
 }
 .credits {
     position: absolute;
@@ -74,4 +99,8 @@ button {
   left: 16px;
   font-size: 24px;
   color: aliceblue;
+}
+
+.credits a {
+    color: white;
 }
